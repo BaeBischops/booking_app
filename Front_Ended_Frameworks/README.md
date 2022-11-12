@@ -1,10 +1,10 @@
 # CodeSpace_Academy_Front_Ended_Frameworks
 
 ## Pre-requisites 
-* Introductio To Teb
+* Introductio To Web
 * Web Design
 * Interactive Web Applications
 
 ## Outcome
-* Creting a Netflix clone
+* Netflix Clone
 * Podcast
