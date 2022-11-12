@@ -8,4 +8,5 @@ and easy to leearn.
 * Interactive Web Applications
 
 ## Outcome
-Creting a Netflix clone
+* Creting a Netflix clone
+* Podcast
