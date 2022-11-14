@@ -1,4 +1,4 @@
-import { html, LitElement } from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js'
+import { html, LitElement, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js'
 import { connect } from '../index.js'
 
 class Component extends LitElement {
@@ -18,11 +18,18 @@ class Component extends LitElement {
     }
 
     disconnectedCallback() { this.disconnectStore() }
+    static styles = css`
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }`;
 
     render() {
         switch (this.phase) {
             case 'loading': 
-                return html`<div>Loading...</div>`
+                return html`<div><img src="imgs/load.gif" class="center"> </div>`
 
             case 'error': 
                 return html`<div>Something went wrong!</div>`
