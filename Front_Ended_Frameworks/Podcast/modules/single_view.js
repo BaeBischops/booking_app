@@ -21,11 +21,11 @@ class Component extends LitElement {
 
     static styles = css`
         h1 {
-            color: purple;
+            color: rgb(0, 0, 0);
         }
         img {
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
         }
     `;
 
@@ -56,7 +56,7 @@ class Component extends LitElement {
         })
 
         return html`
-            <button @click="${backHandler}">👈 BACK</button>
+            <button @click="${backHandler}">Previous</button>
             <h1>${show.title || ''}</h1>
             <img src="${show.image}">
             ${seasons}

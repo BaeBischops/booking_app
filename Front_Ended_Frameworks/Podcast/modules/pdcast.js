@@ -38,4 +38,4 @@ class Component extends LitElement {
     }
 }
 
-customElements.define('podcast-app', Component)
+customElements.define('pod-app', Component)

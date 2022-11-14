@@ -40,6 +40,18 @@ class Component extends LitElement {
     static styles = css`
         li {
             border: 1px solid var(--primary-blue);
+            list-style-type: none;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 50px;
+            margin: 0;
+            padding: 0 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        img {
+            height: 200px ;
+            width: 200px ;
         }
     `;
 
@@ -77,10 +89,10 @@ class Component extends LitElement {
             const clickHandler = () => store.loadSingle(id)
 
             return html`
-                <div> 
-                    <div @click="${clickHandler}"><img src="${image}" width="100" height="100"></div>
+                <li> 
+                    <div @click="${clickHandler}"><img src="${image}"></div>
                     <div>Updated: ${day} ${month} ${year}</div>
-                </div>
+                </li>
             `
         })
 

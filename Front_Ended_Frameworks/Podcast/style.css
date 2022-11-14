@@ -5,26 +5,3 @@ body{
     background-color: rgb(128, 128, 128);
     margin: 0;
 }
-
-/* ul {
-    list-style-type: none;
-}
-
-li { 
-    margin: 10px; 
-    padding: 10px; 
-    list-style-type: none;
-} */
-
-ul li {
-    background: #4d98f5;
-    box-sizing: border-box;
-    color: #fff;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 50px;
-    margin: 0;
-    padding: 0 15px;
-    text-align: center;
-    vertical-align: middle;
-  }
