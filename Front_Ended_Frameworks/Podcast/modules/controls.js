@@ -25,6 +25,10 @@ class Component extends LitElement {
         text-align: center;
         border-style: solid;
         background-color: rgb(0, 0, 0);
+        text-color: 
+    }
+    span {
+        color: rgb(255, 255, 255);
     }`;
 
     render() {
@@ -43,7 +47,7 @@ class Component extends LitElement {
                     <input @input="${inputHandler}" value="${this.search}">
                 </label>
                 <label>
-                    Sorting
+                    <span>Sorting</span>
                     <select @change="${changeHandler}">
                         <option value="a-z" .selected="${this.sorting === 'a-z'}">A - Z</option>
                         <option value="z-a" .selected="${this.sorting === 'z-a'}">Z - A</option>

@@ -37,7 +37,7 @@ class Component extends LitElement {
 
         const backHandler = () => store.loadList()
 
-        const seasons = show.seasons.map(({ episodes, title }) => {
+        const seasons = show.seasons.map(({ seasons, episodes, title }) => {
             return html`
                 <div>
                     <strong>${title}</strong>
