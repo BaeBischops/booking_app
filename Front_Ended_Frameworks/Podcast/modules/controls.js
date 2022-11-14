@@ -20,6 +20,13 @@ class Component extends LitElement {
 
     disconnectedCallback() { this.disconnectStore() }
 
+    static styles = css`
+    div {
+        text-align: center;
+        border-style: solid;
+        background-color: rgb(0, 0, 0);
+    }`;
+
     render() {
         const changeHandler = event => {
             store.changeSorting(event.target.value)

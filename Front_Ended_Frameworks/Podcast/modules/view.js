@@ -50,15 +50,12 @@ class Component extends LitElement {
             vertical-align: middle;
         }
         img {
-            height: 200px ;
-            width: 200px ;
+            height: 300px ;
+            width: 300px ;
         }
     `;
 
     render() {
-        /**
-         * @type {import('../types').preview[]}
-         */
         const previews = this.previews
 
 
@@ -80,24 +77,34 @@ class Component extends LitElement {
             throw new Error('Invalid sorting')
          })
 
-        const list = sortedPreviews.map(({ title, id, updated, image }) => {
+        const list = sortedPreviews.map(({ title, id, updated, image, description }) => {
             const date = new Date(updated)
             const day = date.getDate()
             const month = MONTHS[date.getMonth() - 1]
             const year = date.getFullYear()
+
+            function getWordStr(str) {
+                return str.split(/\s+/).slice(0, 10).join(" ");
+            }
+            
+            //TO CALL THIS FUNCTION
+            var fullStr = description;
+            var finalStr = getWordStr(fullStr) + "...";
 
             const clickHandler = () => store.loadSingle(id)
 
             return html`
                 <li> 
                     <div @click="${clickHandler}"><img src="${image}"></div>
+                    <span> ${finalStr}</span>
                     <div>Updated: ${day} ${month} ${year}</div>
                 </li>
             `
         })
 
         return html`
-            <h1>Podcast List</h1>
+            <h1>Podcast</h1>
+            <p>Stream best podcasts from your favorite</p>
             <podcast-controls></podcast-controls>
             ${list.length > 0 ? html`<ul>${list}</ul>` : html`<div>No matches</div>`}
         `
