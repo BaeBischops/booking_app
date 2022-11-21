@@ -1,24 +1,63 @@
--- phpMyAdmin SQL Dump
--- version 5.1.2
--- https://www.phpmyadmin.net/
+CREATE TABLE `booking`
+(
+    `id`     int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `cid`    int(11)             NOT NULL,
+    `status` ENUM ('PENDING', 'CONFIRMED', 'CANCELLED') DEFAULT 'PENDING',
+    `notes`  varchar(500)                               DEFAULT NULL
+);
+
+CREATE TABLE `customer`
+(
+    `cid`      int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `fullname` varchar(100)        NOT NULL,
+    `email`    varchar(50)         NOT NULL,
+    `password` varchar(150)        NOT NULL,
+    `phone`    varchar(25) DEFAULT NULL
+);
+
+CREATE TABLE `pricing`
+(
+    `pricing_id`  int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `booking_id`  int(11) NOT NULL,
+    `nights`      int(11) NOT NULL,
+    `total_price` double  NOT NULL,
+    `booked_date` DATE NOT NULL
+);
+
+CREATE TABLE administrator
+(
+    `adminId`  INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `fullname` VARCHAR(100) DEFAULT NULL,
+    `password` VARCHAR(100)    NOT NULL,
+    `email`    VARCHAR(30)     NOT NULL UNIQUE,
+    `phone`    VARCHAR(25)  DEFAULT NULL
+);
+
+CREATE TABLE `reservation`
+(
+    `id`          int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `start`       varchar(30)         NOT NULL,
+    `end`         varchar(30)         NOT NULL,
+    `type`        ENUM ('Single', 'Double', 'Deluxe')              DEFAULT 'Single',
+    `requirement` ENUM ('No Preference', 'Non Smoking', 'Smoking') DEFAULT 'No Preference',
+    `adults`      int(2)              NOT NULL,
+    `children`    int(2)                                           DEFAULT '0',
+    `requests`    varchar(500)                                     DEFAULT NULL,
+    `timestamp`   timestamp           NOT NULL                     DEFAULT CURRENT_TIMESTAMP,
+    `hash`        varchar(100)                                     DEFAULT NULL
+);
+
+# Constraints
 --
--- Host: localhost:3306
--- Generation Time: Nov 16, 2022 at 01:28 PM
--- Server version: 5.7.24
--- PHP Version: 8.0.1
+ALTER TABLE `booking`
+    ADD CONSTRAINT `booking_customer__fk` FOREIGN KEY (`cid`) REFERENCES `customer` (`cid`) ON DELETE CASCADE;
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
+--
+-- Constraints for table `reservation`
+--
+ALTER TABLE `reservation`
+    ADD CONSTRAINT `reservation_booking__fk` FOREIGN KEY (`id`) REFERENCES `booking` (`id`) ON DELETE CASCADE;
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ALTER TABLE `pricing`
+    ADD CONSTRAINT `pricing_booking__fk` FOREIGN KEY (`booking_id`) REFERENCES `booking` (`id`) ON DELETE CASCADE;
