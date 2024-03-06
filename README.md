@@ -48,7 +48,7 @@ Have questions about our products or services? Need assistance with your purchas
 
 Stay connected with us on social media:
 <br>
-<a href="bischops.africa/ecommerce">website</a>
+<a href="https://www.bischops.africa/ecommerce">website</a>
 <br>
 <a href="">Twitter</a>
 <br>
