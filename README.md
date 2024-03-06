@@ -44,3 +44,4 @@ At IoT Emporium, we are passionate about bringing the latest innovations in IoT 
 </ul>
 
 <h2>Get In Touch</h2>
+Have questions about our products or services? Need assistance with your purchase? We're here to help!
