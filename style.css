@@ -10,6 +10,13 @@ body {
     color: #ffffff;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
 header {
     width: 100%;
 }
@@ -20,4 +27,5 @@ header .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px;
 }
