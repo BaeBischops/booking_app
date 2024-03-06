@@ -1,0 +1,15 @@
+@import "/assets/css/root.css";
+@import "/assets/css/header.css";
+@import "/assets/css/main.css";
+@import "/assets/css/footer.css";
+
+/*__________ the universal selector __________*/
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
