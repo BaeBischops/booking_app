@@ -19,3 +19,12 @@ At IoT Emporium, we are passionate about bringing the latest innovations in IoT 
     <li>Smartwatches</li>
     <li>Health monitoring devices</li>
 </ul>
+
+<h3>Industrial IoT</h3>
+<ul>
+    <li>Asset tracking solutions</li>
+    <li>Industrial sensors</li>
+    <li>Predictive maintenance systems</li>
+    <li>Remote monitoring devices</li>
+</ul>
+
