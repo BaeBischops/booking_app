@@ -5,17 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background: #000000;
-    color: #ffffff;
-}
-
 a {
     text-decoration: none;
-    color: #ffffff;
 }
-
-
 
 header {
     width: 100%;
@@ -27,7 +19,7 @@ header .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
+    padding: 0 12rem;
 }
 
 header .top .left {
@@ -35,3 +27,6 @@ header .top .left {
     gap: 1rem;
 }
 
+header .top .left a {
+    font-size: .8rem;
+}
