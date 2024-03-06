@@ -19,3 +19,10 @@ a {
 header .top .right {
     font-size: .8rem;
 }
+
+input {
+    background: transparent;
+    outline: none;
+    border: .5px solid #808080;
+
+}
