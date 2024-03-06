@@ -47,3 +47,6 @@ At IoT Emporium, we are passionate about bringing the latest innovations in IoT 
 Have questions about our products or services? Need assistance with your purchase? We're here to help!
 
 Stay connected with us on social media:
+<a href="bischops.africa/ecommerce">website</a>
+<a href="">Twitter</a>
+<a href="">FaceBook</a>
