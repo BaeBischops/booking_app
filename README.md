@@ -1,1 +1,1 @@
-<h1>The Ecommerce</h1>
+<h1>The IoT Emporium</h1>
