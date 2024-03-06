@@ -42,3 +42,5 @@ At IoT Emporium, we are passionate about bringing the latest innovations in IoT 
     <li><b>Secure Transactions</b>: Shop with confidence knowing that your transactions are secure and your personal information is protected.</li>
     <li><b>Fast Shipping</b>: Enjoy fast and reliable shipping options to get your IoT devices delivered straight to your doorstep.</li>
 </ul>
+
+<h2>Get In Touch</h2>
