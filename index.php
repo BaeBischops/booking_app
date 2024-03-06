@@ -12,9 +12,11 @@
 <body>
     <!-- the HEADER section -->
     <header class="header">
-        <a href="index.php" class="logo"></a>
+        <a href="index.php" class="logo">travel.co</a>
         <div class="navbar">
-            
+            <a href="index.php">home</a>
+            <a href="index.php">about</a>
+            <a href="index.php">book</a>
         </div>
     </header>
 
