@@ -11,7 +11,12 @@
 </head>
 <body>
     <!-- the HEADER section -->
-    <header></header>
+    <header class="header">
+        <a href="index.php" class="logo"></a>
+        <div class="navbar">
+            
+        </div>
+    </header>
 
     <!-- the MAIN section -->
     <section class="main"></section>
