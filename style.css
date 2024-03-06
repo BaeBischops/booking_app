@@ -20,9 +20,10 @@ header .top .right {
     font-size: .8rem;
 }
 
-input {
+input, select, textarea {
     background: transparent;
     outline: none;
     border: .5px solid #808080;
-
+    padding: 1rem 1.2rem;
+    font-size: .8rem;
 }
