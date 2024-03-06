@@ -29,3 +29,9 @@ header .top {
     align-items: center;
     padding: 12px;
 }
+
+header .top .left {
+    display: flex;
+    gap: 1rem;
+}
+
