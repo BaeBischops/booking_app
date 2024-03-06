@@ -28,3 +28,11 @@ At IoT Emporium, we are passionate about bringing the latest innovations in IoT 
     <li>Remote monitoring devices</li>
 </ul>
 
+<h3>Consumer Electronics</h3>
+<ul>
+    <li>Smart TVs</li>
+    <li>Connected appliances</li>
+    <li>Entertainment systems</li>
+</ul>
+
+<h2>Why Choose IoT Emporium?</h2>
