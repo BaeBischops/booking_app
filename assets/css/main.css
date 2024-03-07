@@ -7,11 +7,20 @@
 .services .box-container .box {
     padding: .3rem .2rem;
     text-align: center;
-    background: var(--light-black);
+    background:	#20a7db;
+}
+
+.services .box-container .box:hover {
+    background: #ffffff;
+    cursor: pointer;
 }
 
 .services .box-container .box img {
     max-width: 100%; /* Limit image width to 100% of the box width */
     height: auto; /* Maintain aspect ratio */
-    color: w;
+}
+
+.services .box-container .box h3 {
+    font-size: 1.7rem;
+    padding-top: 1rem;
 }
