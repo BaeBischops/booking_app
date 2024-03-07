@@ -23,6 +23,7 @@ html::-webkit-scrollbar {
     width: 1rem;
 }
 
+
 /* __________ media queries __________ */
 @media (max-width: 1200px) {
     header {
@@ -48,15 +49,15 @@ html::-webkit-scrollbar {
         right: 0;
         border-top: var(--border);
         padding: 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     .header .navbar a {
         display: block;
         margin: 2rem;
         text-align: center;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    .header .navbar .active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     #menu-btn {
         display: inline-block;
