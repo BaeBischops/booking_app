@@ -46,6 +46,10 @@ footer {
 
 .footer .copy a {
     text-transform: capitalize;
-    color: var(--white);
+    color: #1f1fac;
+}
+
+.footer .copy a i {
+    color: #1f1fac;
     padding-right: .5rem;
 }
