@@ -60,6 +60,10 @@ html::-webkit-scrollbar {
     }
     #menu-btn {
         display: inline-block;
+        transition: .2s linear;
+    }
+    #menu-btn .bi-x {
+        transform: rotate(180deg);
     }
     
 }
