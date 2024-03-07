@@ -1,12 +1,17 @@
 footer {
     padding: 2.5rem 3.5%;
 }
-.footer{
-    background: var(--light-black);
-}
+
 
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-bottom: 2rem;
+    text-transform: capitalize;
 }
 
