@@ -3,3 +3,15 @@
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 1.5rem;
 }
+
+.services .box-container .box {
+    padding: .3rem .2rem;
+    text-align: center;
+    background: var(--light-black);
+}
+
+.services .box-container .box img {
+    max-width: 100%; /* Limit image width to 100% of the box width */
+    height: auto; /* Maintain aspect ratio */
+    color: w;
+}
