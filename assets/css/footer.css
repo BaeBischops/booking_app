@@ -3,7 +3,7 @@ footer {
 }
 
 .footer {
-    background: var(--black);
+    background: var(--light-black);
 }
 
 .footer .box-container {
