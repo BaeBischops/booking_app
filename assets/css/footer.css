@@ -1,9 +1,12 @@
 footer {
     padding: 2.5rem 3.5%;
 }
+.footer{
+    background: var(--light-black);
+}
 
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    
 }
+
