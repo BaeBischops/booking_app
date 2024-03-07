@@ -16,17 +16,24 @@
 
 html {
     font-size: 62%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
     width: 1rem;
 }
 
+html::-webkit-scrollbar-thumb {
+    background: var(--white);
+}
+
 
 /* __________ media queries __________ */
 @media (max-width: 1200px) {
     header {
+        padding: 3rem 5%;
+    }
+    footer {
         padding: 3rem 5%;
     }
 }

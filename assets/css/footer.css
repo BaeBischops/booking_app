@@ -1,14 +1,13 @@
-footer {
-    padding: 2.5rem 3.5%;
-}
-
 .footer {
-    background: url(/assets/img/footer.jpg);
+    background: url(/assets/img/footer.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
 }
 
 .footer .box-container .box h3 {
