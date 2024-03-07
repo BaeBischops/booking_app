@@ -32,11 +32,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 /* __________ media queries __________ */
-@media (max-width: 1200px) {
-    header {
-        padding: 3rem 5%;
-    }
-    footer {
+@media (min-width: 1200px) {
+    header, section, footer{
         padding: 3rem 5%;
     }
 }
@@ -45,7 +42,7 @@ html::-webkit-scrollbar-thumb {
     html {
         font-size: 55%;
     }
-    header {
+    header, section, footer {
         padding: 3rem 2rem;
     }
 

@@ -5,3 +5,8 @@ menu.onclick = () => {
     menu.classList.toggle('bi-x');
     navbar.classList.toggle('active');
 }
+
+menu.onclick = () => {
+    menu.classList.toggle('bi-x');
+    navbar.classList.toggle('active');
+}
