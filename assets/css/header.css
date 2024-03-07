@@ -25,3 +25,8 @@ header{
     margin-left: 2rem;
     color: var(--black);
 }
+
+.header .navbar a:hover {
+    color: var(--light-black);
+}
+
