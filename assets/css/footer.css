@@ -22,7 +22,7 @@ footer {
 .footer .box-container .box a {
     color: var(--light-white);
     font-size: 1.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     display: block;
 }
 
@@ -46,10 +46,10 @@ footer {
 
 .footer .copy a {
     text-transform: capitalize;
-    color: #1f1fac;
+    color: var(--white);
 }
 
 .footer .copy a i {
-    color: #1f1fac;
+    color: var(--white);
     padding-right: .5rem;
 }
