@@ -31,7 +31,6 @@ html::-webkit-scrollbar-thumb {
     background: var(--white);
 }
 
-
 /* __________ media queries __________ */
 @media (max-width: 1200px) {
     header {
