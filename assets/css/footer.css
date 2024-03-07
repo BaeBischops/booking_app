@@ -39,5 +39,11 @@ footer {
     text-align: center;
     padding-top: 3rem;
     margin-top: 3rem;
-    border-top: 1rem solid var(--light-white);
+    border-top: .1rem solid var(--light-white);
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.footer .copy {
+    
 }
