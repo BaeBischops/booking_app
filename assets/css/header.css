@@ -31,8 +31,10 @@ header{
 }
 
 #menu-btn {
+    font-size: 2.5rem;
     color: var(--black);
     display: none;
+    cursor: pointer;
 }
 
 
