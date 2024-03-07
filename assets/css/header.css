@@ -30,3 +30,7 @@ header{
     color: var(--light-black);
 }
 
+#menu-btn {
+    color: var(--black);
+    display: none;
+}
