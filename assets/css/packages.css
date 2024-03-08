@@ -1,0 +1,11 @@
+.package .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.package .box-container .image {
+    height: 25rem;
+    overflow: hidden;
+}
+
