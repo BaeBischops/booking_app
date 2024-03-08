@@ -48,3 +48,26 @@
     text-align: center;
     margin-top: 2rem;
 }
+
+.offers {
+    text-align: center;
+}
+
+.offers .content {
+    max-width: 70rem;
+    margin: 0 auto;
+
+}
+
+.offers .content h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.offers .content p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
