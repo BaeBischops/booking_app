@@ -30,6 +30,7 @@
     color: var(--black);
     padding: 1rem;
     background: var(--white);
+    animation: fadeIn .4s linear backwards .2s;
 }
 
 .home .slide .content h3 {
@@ -37,6 +38,7 @@
     color: var(--white);
     text-transform: uppercase;
     line-height: 1;
+    animation: fadeIn .4s linear backwards .4s;
 }
 
 .home .slide .content .btn {
@@ -47,9 +49,18 @@
     font-size: 1.7rem;
     padding: 1rem 3rem;
     cursor: pointer;
+    animation: fadeIn .4s linear backwards .6s;
 }
 
 .home .slide .content .btn:hover {
     color: var(--black);
     background: var(--white);
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
 }
