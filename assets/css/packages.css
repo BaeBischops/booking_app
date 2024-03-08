@@ -1,16 +1,18 @@
-.package .box-container {
+.package .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
 }
 
-.package .box-container .image {
+.package .container .box .image {
     height: 25rem;
     overflow: hidden;
 }
 
-.package .box-container .image img {
+.package .container .box .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
+
