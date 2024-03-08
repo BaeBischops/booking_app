@@ -34,6 +34,21 @@ html::-webkit-scrollbar-thumb {
     background: var(--white);
 }
 
+.btn {
+    display: inline-block;
+    background: var(--black);
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--black);
+    background: var(--white);
+}
+
 /* __________ media queries __________ */
 @media (min-width: 1200px) {
     header, section, footer{
