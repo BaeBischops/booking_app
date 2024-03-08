@@ -43,3 +43,8 @@
     line-height: 2;
     padding: 1rem 0;
 }
+
+.package .more {
+    text-align: center;
+    margin-top: 2rem;
+}
