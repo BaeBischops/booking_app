@@ -11,6 +11,7 @@
     background-size: cover !important;
     background-position: center !important;
     min-height: 60rem;
+    border: var(--border);
 }
 
 .home .slide .content {
@@ -31,5 +32,19 @@
     color: var(--white);
     text-transform: uppercase;
     line-height: 1;
-    text-shadow: var(--text-shadow);
+}
+
+.home .slide .content .btn {
+    display: inline-block;
+    background: var(--black);
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.home .slide .content .btn:hover {
+    color: var(--black);
+    background: var(--white);
 }
