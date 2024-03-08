@@ -34,5 +34,12 @@
 .package .container .box .content h3{
     font-size: 2.5rem;
     text-transform: capitalize;
+    color: var(--black);
+}
 
+.package .container .box .content p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
 }
