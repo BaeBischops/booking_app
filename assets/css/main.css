@@ -1,11 +1,3 @@
-.services .heading {
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 3rem;
-    font-size: 6rem;
-    
-}
-
 .services .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
