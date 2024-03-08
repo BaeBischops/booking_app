@@ -57,6 +57,34 @@
     background: var(--white);
 }
 
+.home .swiper-button-prev, 
+.home .swiper-button-next {
+    top: inherit;
+    bottom: 0;
+    right: 0;
+    left: inherit;
+    height: 7rem;
+    width: 7rem;
+    background: var(--white);
+    color: var(--black);
+}
+
+.home .swiper-button-prev {
+    right: 7rem;
+}
+
+.home .swiper-button-prev:hover, 
+.home .swiper-button-next:hover {
+    color: var(--white);
+    background: var(--black);
+}
+
+.home .swiper-button-prev::after, 
+.home .swiper-button-next::after {
+    font-size: 2rem;
+
+}
+
 @keyframes fadeIn {
     0% {
         transform: scale(0);
