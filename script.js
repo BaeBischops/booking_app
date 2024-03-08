@@ -6,3 +6,12 @@ menu.onclick = () => {
     navbar.classList.toggle('active');
 }
 
+const swiper = new Swiper('.slider', {
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
