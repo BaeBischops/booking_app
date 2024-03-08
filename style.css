@@ -82,4 +82,7 @@ html::-webkit-scrollbar-thumb {
     html {
         font-size: 50%;
     }
+    .heading {
+        font-size: 3.5rem;
+    }
 }
