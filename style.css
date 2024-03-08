@@ -46,7 +46,9 @@ html::-webkit-scrollbar-thumb {
     header, section, footer {
         padding: 3rem 2rem;
     }
-
+    .home .slide .content h3 {
+        font-size: 10vw;
+    }
 }
 
 @media (max-width: 768px) {
