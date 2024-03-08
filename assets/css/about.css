@@ -1,0 +1,44 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .image {
+    flex: 1 1 41rem;
+}
+
+.about .image img {
+    width: 100%;
+}
+
+.about .content {
+    flex: 1 1 41rem;
+    padding: 3rem;
+    background: var(--light-black);
+}
+
+.about .content h3 {
+    font-size: 3rem;
+    color: var(--black);
+
+}
+
+.about .content p {
+
+}
+
+.about .btn {
+    display: inline-block;
+    background: var(--black);
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.about .btn:hover {
+    color: var(--black);
+    background: var(--white);
+}
