@@ -1,10 +1,10 @@
-let navbar = document.querySelector('.header .navbar');
+let navbar = document.querySelector('.header .navBar');
 
 document.querySelector('#menuBtn').onclick = () =>{
     navbar.classList.toggle('active');
 };
 
 window.onscroll = () => {
-    navbar.classList.remove('active');
- }; 
+    navBar.classList.remove('active');
+}; 
 
