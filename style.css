@@ -2,6 +2,7 @@
     --main-color:#000000;
     --sub-color:#e1ccb7;
     --white:#ffffff;
+    --background: #ffd700;
     --border:.1rem solid #ffd700;
 }
  
@@ -58,7 +59,13 @@ body{
     transition: .2s linear;
     margin-top: 1rem;
     background-color: var(--main-color);
- }
+}
+
+.btn:hover{
+    border-radius: 0;
+    background-color: var(--background);
+    color: var(--main-color);
+}
 
 section{
     padding: 3rem 2rem;
@@ -81,6 +88,10 @@ section{
     color: var(--sub-color);
     font-size: 2.5rem;
     text-transform: uppercase
+}
+
+.header .flex .btn{
+    margin-top: 0;
 }
 
 .header .flex .bi-list {
