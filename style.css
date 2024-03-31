@@ -237,6 +237,13 @@ section{
     font-size: 1.7rem;
     color: var(--sub-color);
 }
+
+.about .row.revers{
+    flex-flow: row-reverse;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+ }
+ 
 /* MEDIA QUERIES */
 @media (max-width:991px){
 
