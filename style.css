@@ -323,10 +323,24 @@ section{
 .gallery img{
    height: 40rem;
    width: 60rem;
-   border-radius: .5rem;
+   border-radius: 0;
    object-fit: cover;
    margin-bottom: 4rem;
    user-select: none;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+   bottom: 0;
+}
+span.swiper-pagination-bullet {
+    background: grey;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+   background-color: var(--sub-color);
+}
+
+.swiper-pagination-bullet-active{
+   background-color: var(--white);
 }
 
 /* MEDIA QUERIES */

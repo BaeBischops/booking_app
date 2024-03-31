@@ -18,7 +18,7 @@ var swiper = new Swiper(".homeSlider", {
     },
 });
 
-var swiper = new Swiper(".gallery-slider", {
+var swiper = new Swiper(".gallerySlider", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
