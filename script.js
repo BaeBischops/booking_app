@@ -5,9 +5,11 @@ menuBtn.onclick = () =>{
     navbar.classList.toggle('active');
 };
 
-window.onscroll = () => {
-    navBar.classList.remove('active');
-}; 
+document.querySelectorAll('.contact .row .faq .box h3').forEach(faqBox => {
+    faqBox.onclick = () =>{
+       faqBox.parentElement.classList.toggle('active');
+    }
+});
 
 var swiper = new Swiper(".homeSlider", {
     loop: true,
