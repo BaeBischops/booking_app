@@ -148,7 +148,7 @@
 
     </section>
 
-    <!-- THE SCRIPS SECTION -->
+    <!-- THE SERVICES SECTION -->
     <section class="services">
         <div class="box-container">
             <div class="box">
@@ -185,6 +185,54 @@
         
     </section>
 
+    <!-- THE RESERVATION SECTION -->
+    <section class="reservation" id="reservation">
+        <form action="" method="post">
+            <h3>make a reservation</h3>
+            <div class="flex">
+                <div class="box">
+                    <p>check in <span>*</span></p>
+                    <input type="date" name="checkIn" class="input" required>
+                </div>
+                <div class="box">
+                    <p>check out <span>*</span></p>
+                    <input type="date" name="checkOut" class="input" required>
+                </div>
+                <div class="box">
+                    <p>adults <span>*</span></p>
+                    <select name="adults" class="input">
+                        <option value="1">1 adults</option>
+                        <option value="2">2 adults</option>
+                        <option value="3">3 adults</option>
+                        <option value="4">4 adults</option>
+                        <option value="5">5 adults</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>children <span>*</span></p>
+                    <select name="children" class="input">
+                        <option value="0">0 children</option>
+                        <option value="1">1 children</option>
+                        <option value="2">2 children</option>
+                        <option value="3">3 children</option>
+                        <option value="4">4 children</option>
+                        <option value="5">5 children</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>rooms <span>*</span></p>
+                    <select name="rooms" class="input">
+                        <option value="1">1 rooms</option>
+                        <option value="2">2 rooms</option>
+                        <option value="3">3 rooms</option>
+                        <option value="4">4 rooms</option>
+                        <option value="5">5 rooms</option>
+                    </select>
+                </div>
+            </div>
+            <input type="button" value="check availability" class="btn">
+        </form>
+    </section>
     <!-- THE SCRIPS SECTION -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
