@@ -275,6 +275,51 @@ section{
     color:var(--sub-color);
 }
 
+.reservation form{
+    border: var(--border);
+    padding: 2rem;
+}
+
+.reservation form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.reservation form h3{
+    background-color: var(--sub-color);
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0;
+    padding: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.reservation form .flex .box{
+    flex: 1 1 40rem;
+}
+
+.reservation form .flex .box p{
+    font-size: 1.8rem;
+    color: var(--sub-color);
+}
+
+.reservation form .flex .box .input{
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: var(--border);
+    background: var(--main-color);
+    color: var(--white);
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.reservation form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
+   filter: invert(1);
+}
+
 /* MEDIA QUERIES */
 @media (max-width:991px){
 
