@@ -1,6 +1,26 @@
 <?php
     include 'components/connect.php';
 
+    $id = create_unique_id();
+    $name = $_POST['name'];
+    $name = filter_var($name, FILTER_SANITIZE_STRING);
+    $email = $_POST['email'];
+    $email = filter_var($email, FILTER_SANITIZE_STRING);
+    $number = $_POST['number'];
+    $number = filter_var($number, FILTER_SANITIZE_STRING);
+    $message = $_POST['message'];
+    $message = filter_var($message, FILTER_SANITIZE_STRING);
+
+    $verify_message = $conn->prepare("SELECT * FROM `messages` WHERE name = ? AND email = ? AND number = ? AND message = ?");
+    $verify_message->execute([$name, $email, $number, $message]);
+ 
+    if($verify_message->rowCount() > 0){
+       $warning_msg[] = 'message sent already!';
+    }else{
+       $insert_message = $conn->prepare("INSERT INTO `messages`(id, name, email, number, message) VALUES(?,?,?,?,?)");
+       $insert_message->execute([$id, $name, $email, $number, $message]);
+       $success_msg[] = 'message send successfully!';
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -323,7 +343,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="script.js"></script>
-    
+
     <?php include 'components/message.php'; ?>
 
 </body>
