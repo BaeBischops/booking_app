@@ -11,6 +11,12 @@ document.querySelectorAll('.contact .row .faq .box h3').forEach(faqBox => {
     }
 });
 
+document.querySelectorAll('input[type="number"]').forEach(inputNumbmer => {
+  inputNumbmer.oninput = () =>{
+     if(inputNumbmer.value.length > inputNumbmer.maxLength) inputNumbmer.value = inputNumbmer.value.slice(0, inputNumbmer.maxLength);
+  }
+});
+
 var swiper = new Swiper(".homeSlider", {
     loop: true,
     effect: "coverFlow",
