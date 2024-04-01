@@ -1,3 +1,4 @@
+<!-- THE HEADER SECTION -->
 <section class="header">
     <div class="flex">
         <a href="#home" class="logo">reservations.africa</a>
